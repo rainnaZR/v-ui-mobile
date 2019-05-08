@@ -17,15 +17,15 @@
         unit="个任务"
         v-model="values[2]" />
 
-    <div>进度条的值为{{values.join(',')}}</div>
-
-
     <vu-progressbar
         :barHeight="10"
         theme="orange"
         v-model="loadingValue">
         <div class="desc">页面已加载{{loadingValue}}%</div>
     </vu-progressbar>
+
+
+    <div>进度条的值为{{values.join(',')}},{{loadingValue}}</div>
 </div>
 </template>
 
@@ -41,10 +41,10 @@ export default {
     mounted(){
         let that = this;
         let id = setInterval(() => {
+            that.loadingValue ++
             if(that.loadingValue == 100){
                 clearInterval(id)
             }
-            that.loadingValue ++
         }, 100)
     }
 }

@@ -22,6 +22,7 @@ import Checker from './components/Checker';
 import Range from './components/Range';
 import Upload from './components/Upload';
 import ProgressBar from './components/ProgressBar';
+import Countdown from './components/Countdown';
 import Toast from './components/Toast';
 
 const routes = [
@@ -37,6 +38,7 @@ const routes = [
     {path: '/form/radio', component: Radio},
     {path: '/form/checkbox', component: Checkbox},
     {path: '/form/switch', component: Switch},
+    {path: '/date/countdown', component: Countdown},
     {path: '/notice/toast', component: Toast}
 ];
 

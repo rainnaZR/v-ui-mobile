@@ -108,6 +108,11 @@
     },{
       "title": "Date",
       "childList":[{
+        "name": "CountDown",
+        "desc": "倒计时",
+        "router": "/date/countdown",
+        "done": true
+      },{
         "name": "DatePicker",
         "desc": "日期选择",
         "router": ""
@@ -122,10 +127,6 @@
       },{
         "name": "DateRangePicker",
         "desc": "日期范围选择",
-        "router": ""
-      },{
-        "name": "CountDown",
-        "desc": "倒计时",
         "router": ""
       }]
     },{

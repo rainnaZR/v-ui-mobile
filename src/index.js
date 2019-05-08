@@ -13,6 +13,7 @@ import Checker from './components/checker';
 import Range from './components/range';
 import Upload from './components/upload';
 import ProgressBar from './components/ProgressBar';
+import Countdown from './components/countdown';
 //service
 import Toast from './services/toast/index.js';
 
@@ -29,6 +30,7 @@ function install(){
     Vue.component('vu-range', Range);
     Vue.component('vu-upload', Upload);
     Vue.component('vu-progressbar', ProgressBar);
+    Vue.component('vu-countdown', Countdown);
     //Services
     Vue.prototype.$toast = window.$toast = Toast;
 }
@@ -47,5 +49,6 @@ export default {
     Range,
     Upload,
     ProgressBar,
+    Countdown,
     Toast
 }
