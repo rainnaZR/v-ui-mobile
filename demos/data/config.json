@@ -32,6 +32,11 @@
         "desc": "上传",
         "router": "/basic/upload",
         "done": true
+      },{
+        "name": "ProgressBar",
+        "desc": "进度条",
+        "router": "/basic/progressbar",
+        "done": true
       }]
     },{
       "title": "Form",
@@ -144,10 +149,6 @@
       },{
         "name": "Pagination",
         "desc": "分页",
-        "router": ""
-      },{
-        "name": "Progress",
-        "desc": "进度条",
         "router": ""
       },{
         "name": "ProgressCircle",

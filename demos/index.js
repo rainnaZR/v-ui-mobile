@@ -21,6 +21,7 @@ import Search from './components/Search';
 import Checker from './components/Checker';
 import Range from './components/Range';
 import Upload from './components/Upload';
+import ProgressBar from './components/ProgressBar';
 import Toast from './components/Toast';
 
 const routes = [
@@ -31,6 +32,7 @@ const routes = [
     {path: '/basic/checker', component: Checker},
     {path: '/basic/range', component: Range},
     {path: '/basic/upload', component: Upload},
+    {path: '/basic/progressbar', component: ProgressBar},
     {path: '/form/input', component: Input},
     {path: '/form/radio', component: Radio},
     {path: '/form/checkbox', component: Checkbox},

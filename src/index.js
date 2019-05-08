@@ -12,6 +12,7 @@ import Search from './components/search';
 import Checker from './components/checker';
 import Range from './components/range';
 import Upload from './components/upload';
+import ProgressBar from './components/ProgressBar';
 //service
 import Toast from './services/toast/index.js';
 
@@ -27,6 +28,7 @@ function install(){
     Vue.component('vu-checker', Checker);
     Vue.component('vu-range', Range);
     Vue.component('vu-upload', Upload);
+    Vue.component('vu-progressbar', ProgressBar);
     //Services
     Vue.prototype.$toast = window.$toast = Toast;
 }
@@ -44,5 +46,6 @@ export default {
     Checker,
     Range,
     Upload,
+    ProgressBar,
     Toast
 }

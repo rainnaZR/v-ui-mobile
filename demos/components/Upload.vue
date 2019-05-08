@@ -1,6 +1,7 @@
 <template>
     <div class="m-content">
         <vu-upload
+            v-model="imgUrl"
             @success="success"
             @error="error">
         </vu-upload>
@@ -16,8 +17,8 @@
             @error="error">
         </vu-upload>
 
-        <div v-if="imgInfo && imgInfo.imgUrl">
-            <p>图片路径为：<br /><a :href="imgInfo.imgUrl" target="_blank">{{imgInfo.imgUrl}}</a></p>
+        <div>图片路径为：<br /><a :href="imgUrl" target="_blank">{{imgUrl}}</a></div>
+        <div v-if="imgInfo">
             <p>图片宽度为：{{imgInfo.imgWidth}}px</p>
             <p>图片高度为：{{imgInfo.imgHeight}}px</p>
         </div>
@@ -28,6 +29,7 @@
 export default {
     data(){
         return {
+            imgUrl: '',
             imgInfo: {}
         }
     },
