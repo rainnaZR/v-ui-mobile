@@ -1,4 +1,4 @@
-# V-UI
+# V-UI-Mobile
 A Component Library, based on Vue.js.
 
 
@@ -7,11 +7,8 @@ A Component Library, based on Vue.js.
 ```
 cnpm i
 
-//打包vui组件库
-npm run build:vui
-
 //本地启动dev环境，查看demo页面
-npm run start
+npm run dev
 ```
 
 
