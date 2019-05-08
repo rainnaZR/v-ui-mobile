@@ -1,0 +1,23 @@
+.vu-toast{
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    padding: 12px 15px;
+    background: rgba(0,0,0,.7);
+    border-radius: 5px;
+    .message{
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+    }
+    &-top{
+        top: 50px;
+    }
+    &-middle{
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    &-bottom{
+        bottom: 50px;
+    }
+}

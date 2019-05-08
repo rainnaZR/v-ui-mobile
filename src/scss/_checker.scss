@@ -1,0 +1,18 @@
+@import './base/variables';
+
+.vu-checker{
+    .checker-item{
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 10px 10px 0;
+        border: 1px solid $gray;
+        font-size: 14px;
+        &-checked{
+            border-color: $red;
+        }
+        &-disabled{
+            background: $gray;;
+            color: #999;
+        }
+    }
+}

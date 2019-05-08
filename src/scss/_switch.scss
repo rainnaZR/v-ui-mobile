@@ -1,0 +1,39 @@
+@import './base/variables';
+
+.vu-switch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .switch-text{
+        flex: 1;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    .switch-button{
+        position: relative;
+        width: 52px;
+        height: 29px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        border: 1px solid $gray;
+        box-shadow: inset 0px 1px 3px rgba(0,0,0,.05);
+        transition: all .3s;
+        .circle{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 26px;
+            background: #fff;
+            box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.3);
+            transition: all .3s;
+        }
+        &-slide{
+            .circle{
+                left: 25px;
+            }
+        }
+    }
+}

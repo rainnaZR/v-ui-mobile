@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'vuiconfont';  /* project id 1003753 */
+    src: url('//at.alicdn.com/t/font_1003753_c6a00encw8h.eot');
+    src: url('//at.alicdn.com/t/font_1003753_c6a00encw8h.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.svg#vuiconfont') format('svg');
+  }
+
+//icon组件混入样式
+@mixin iconfont-style($content){
+    &:before{
+        content: $content;
+    }
+}
+
+.vu-icon{
+    font-family: "vuiconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &-correct{
+        @include iconfont-style("\e604");
+    }
+    &-close{
+        @include iconfont-style("\e605");
+    }
+    &-up{
+        @include iconfont-style("\e978");
+    }
+    &-down{
+        @include iconfont-style("\e977");
+    }
+    &-left{
+        @include iconfont-style("\e976");
+    }
+    &-right{
+        @include iconfont-style("\e683");
+    }
+    &-search{
+        @include iconfont-style("\e979");
+    }
+}

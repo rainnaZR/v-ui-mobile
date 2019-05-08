@@ -1,0 +1,222 @@
+{
+  "__push_method__": "push",
+  "componentList": [{
+    "title": "Basic",
+    "childList": [{
+        "name": "Button",
+        "desc": "按钮",
+        "router": "/basic/button",
+        "done": true
+      },{
+        "name": "Icon",
+        "desc": "图标",
+        "router": "/basic/icon",
+        "done": true
+      },{
+        "name": "Search",
+        "desc": "搜索框",
+        "router": "/basic/search",
+        "done": true
+      },{
+        "name": "Checker",
+        "desc": "标签选择",
+        "router": "/basic/checker",
+        "done": true
+      },{
+        "name": "Range",
+        "desc": "范围选择",
+        "router": "/basic/range",
+        "done": true
+      },{
+        "name": "Upload",
+        "desc": "上传",
+        "router": "/basic/upload",
+        "done": true
+      }]
+    },{
+      "title": "Form",
+      "childList": [{
+        "name": "Input",
+        "desc": "输入框",
+        "router": "/form/input",
+        "done": true
+      },{
+        "name": "Radio",
+        "desc": "单选框",
+        "router": "/form/radio",
+        "done": true
+      },{
+        "name": "Checkbox",
+        "desc": "多选框",
+        "router": "/form/checkbox",
+        "done": true
+      },{
+        "name": "Switch",
+        "desc": "开关",
+        "router": "/form/switch",
+        "done": true
+      },{
+        "name": "Select",
+        "desc": "下拉选择",
+        "router": ""
+      },{
+        "name": "AutoComplete",
+        "desc": "模糊匹配",
+        "router": ""
+      },{
+        "name": "NumberInput",
+        "desc": "数字输入框",
+        "router": ""
+      },{
+        "name": "TagInput",
+        "desc": "标签输入框",
+        "router": ""
+      },{
+        "name": "RangeSlider",
+        "desc": "滑块",
+        "router": ""
+      },{
+        "name": "Form",
+        "desc": "表单",
+        "router": ""
+      }]
+    },{
+      "title": "Notice",
+      "childList": [{
+        "name": "Toast",
+        "desc": "消息提示",
+        "router": "/notice/toast",
+        "done": true
+      },{
+        "name": "Message",
+        "desc": "提示",
+        "router": ""
+      },{
+        "name": "Notice",
+        "desc": "通知",
+        "router": ""
+      },{
+        "name": "Modal",
+        "desc": "弹窗",
+        "router": ""
+      }]
+    },{
+      "title": "Date",
+      "childList":[{
+        "name": "DatePicker",
+        "desc": "日期选择",
+        "router": ""
+      },{
+        "name": "TimePicker",
+        "desc": "时间选择",
+        "router": ""
+      },{
+        "name": "DatetimePicker",
+        "desc": "日期时间选择",
+        "router": ""
+      },{
+        "name": "DateRangePicker",
+        "desc": "日期范围选择",
+        "router": ""
+      },{
+        "name": "CountDown",
+        "desc": "倒计时",
+        "router": ""
+      }]
+    },{
+      "title": "Advance",
+      "childList": [{
+        "name": "Uploader",
+        "desc": "文件上传",
+        "router": ""
+      },{
+        "name": "Tree",
+        "desc": "树",
+        "router": ""
+      },{
+        "name": "Category",
+        "desc": "分类选择",
+        "router": ""
+      },{
+        "name": "Table",
+        "desc": "表格",
+        "router": ""
+      },{
+        "name": "Pagination",
+        "desc": "分页",
+        "router": ""
+      },{
+        "name": "Progress",
+        "desc": "进度条",
+        "router": ""
+      },{
+        "name": "ProgressCircle",
+        "desc": "进度环",
+        "router": ""
+      },{
+        "name": "Tabs",
+        "desc": "标签页",
+        "router": ""
+      },{
+        "name": "Slider",
+        "desc": "轮播",
+        "router": ""
+      },{
+        "name": "Collapse",
+        "desc": "折叠面板",
+        "router": ""
+      },{
+        "name": "Loading",
+        "desc": "加载中",
+        "router": ""
+      },{
+        "name": "BackTop",
+        "desc": "返回顶部",
+        "router": ""
+      },{
+        "name": "TextEllipsis",
+        "desc": "文本超出省略",
+        "router": ""
+      },{
+        "name": "CountUp",
+        "desc": "数值累加器",
+        "router": ""
+      },{
+        "name": "Qrcode",
+        "desc": "二维码",
+        "router": ""
+      },{
+        "name": "Previewer",
+        "desc": "大图预览",
+        "router": ""
+      },{
+        "name": "Scroller",
+        "desc": "滚动",
+        "router": ""
+      },{
+        "name": "ColorPicker",
+        "desc": "色彩选择",
+        "router": ""
+      },{
+        "name": "Vchart",
+        "desc": "图表",
+        "router": ""
+      },{
+        "name": "ImgLazyLoad",
+        "desc": "图片懒加载",
+        "router": ""
+      },{
+        "name": "Pager",
+        "desc": "分页器",
+        "router": ""
+      },{
+        "name": "Base64",
+        "desc": "Base64编码器",
+        "router": ""
+      },{
+        "name": "Area",
+        "desc": "省市选择",
+        "router": ""
+      }]
+  }]
+}

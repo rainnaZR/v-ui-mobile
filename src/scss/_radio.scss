@@ -1,0 +1,33 @@
+@import './base/variables';
+
+.vu-radio{
+    .selectitem label{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid $gray;
+        font-size: 14px;
+    }
+    input[type=radio]{
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .selectlabel{
+        flex: 1;
+        margin: 0 0 0 5px;
+    }
+    &-1{
+        .selectitem label{
+            flex-direction: row-reverse;
+        }
+        .selectlabel{
+            margin: 0;
+        }
+    }
+}

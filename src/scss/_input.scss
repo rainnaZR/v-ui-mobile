@@ -1,0 +1,35 @@
+.vu-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #d2d6de;
+    border-radius: 5px;
+    padding: 0 10px;
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    .input-label{
+        margin: 0 10px 0 0;
+    }
+    .input-wrap{
+        position: relative;
+        flex: 1;
+        padding: 8px 20px 8px 0;
+    }
+    .input-field{
+        width: 100%;
+        line-height: 20px;
+        font-size: 14px;
+        &:disabled{
+            cursor: not-allowed;
+            color:#999;
+        }
+    }
+    .input-clear{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

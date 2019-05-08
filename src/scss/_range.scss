@@ -1,0 +1,14 @@
+.vu-range{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    input[type=range]{
+        flex: 1;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 10px;
+        height: 40px;
+    }
+}
+
