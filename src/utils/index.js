@@ -16,8 +16,17 @@ const timeout = (duration = 0) => {
     })
 }
 
+const extend = (target, source) => {
+    for (let key in source) {
+      if(source.hasOwnProperty(key)) target[key] = source[key]
+    }
+
+    return target
+}
+
 module.exports = {
     createElement,
     removeElement,
-    timeout
+    timeout,
+    extend
 }

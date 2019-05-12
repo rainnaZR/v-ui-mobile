@@ -77,10 +77,6 @@
         "desc": "标签输入框",
         "router": ""
       },{
-        "name": "RangeSlider",
-        "desc": "滑块",
-        "router": ""
-      },{
         "name": "Form",
         "desc": "表单",
         "router": ""
@@ -92,6 +88,11 @@
         "desc": "消息提示",
         "router": "/notice/toast",
         "done": true
+      },{
+        "name": "Dialog",
+        "desc": "对话框",
+        "router": "/notice/dialog",
+        "done": false
       },{
         "name": "Message",
         "desc": "提示",

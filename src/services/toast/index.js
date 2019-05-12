@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Toast from './Toast';
+import Toast from './index.vue';
 import {createElement} from 'utils_path/index';
 
 function ToastInit(){

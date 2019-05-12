@@ -21,8 +21,8 @@ https://help.aliyun.com/document_detail/64041.html
 */
 const OSS_CONFIG = {
     region: 'oss-cn-hangzhou',
-    accessKeyId: '',
-    accessKeySecret: '',
+    accessKeyId: 'xxx',
+    accessKeySecret: 'xxx',
     stsToken: '',
     bucket: 'image-xxx'
 };
@@ -50,7 +50,7 @@ export default {
         directory: { //用项目名称区分，比如h5, ms, activity等
             type: String,
             default: 'vui/'
-        }  
+        }
     },
 
     data(){
