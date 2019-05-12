@@ -37,6 +37,11 @@
         "desc": "进度条",
         "router": "/basic/progressbar",
         "done": true
+      },{
+        "name": "Loading",
+        "desc": "加载中",
+        "router": "/basic/loading",
+        "done": false
       }]
     },{
       "title": "Form",
@@ -92,11 +97,7 @@
         "name": "Dialog",
         "desc": "对话框",
         "router": "/notice/dialog",
-        "done": false
-      },{
-        "name": "Message",
-        "desc": "提示",
-        "router": ""
+        "done": true
       },{
         "name": "Notice",
         "desc": "通知",
@@ -167,10 +168,6 @@
       },{
         "name": "Collapse",
         "desc": "折叠面板",
-        "router": ""
-      },{
-        "name": "Loading",
-        "desc": "加载中",
         "router": ""
       },{
         "name": "BackTop",

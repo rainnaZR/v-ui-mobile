@@ -1,5 +1,5 @@
 <template>
-    <div vu-toast class="vu-toast" :class="toastClass">
+    <div vu-toast class="vu-toast" :class="positionTypes[position]">
         <div class="message" v-text="message"></div>
     </div>
 </template>
@@ -8,7 +8,7 @@
 import {removeElement} from 'utils_path/index';
 
 let DEFAULT_DURATION = 3000,
-    DEFAULT_POSITION = 1,
+    DEFAULT_POSITION = 'middle',
     DEFAULT_TOAST_POSITION_TYPES = {
         'top': 'vu-toast-top',
         'middle': 'vu-toast-middle',
@@ -24,14 +24,9 @@ export default {
         return {
             message: '',
             duration: DEFAULT_DURATION,
-            position: DEFAULT_POSITION,  //0:顶部提示，1:中间提示，2:底部提示
+            position: DEFAULT_POSITION, //0:顶部提示，1:中间提示，2:底部提示
+            positionTypes: DEFAULT_TOAST_POSITION_TYPES,
             state: 'hide'
-        }
-    },
-
-    computed:{
-        toastClass(){
-            return DEFAULT_TOAST_POSITION_TYPES[this.position];
         }
     },
 

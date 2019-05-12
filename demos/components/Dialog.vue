@@ -54,15 +54,15 @@ export default {
 
     methods: {
         showDialog(data){
-            $dialog.show(data).then(() => alert('弹窗确认按钮点击'), () => alert('弹窗取消按钮点击'))
+            $dialog.show(data).then(() => $toast.show({message: '弹窗确认按钮点击事件触发'}), () => $toast.show({message: '弹窗取消按钮点击事件触发'}))
         },
 
         submit(){
-            console.log('弹窗确认按钮点击')
+            $toast.show({message: '弹窗确认按钮点击事件触发'})
         },
 
         cancel(){
-            console.log('弹窗取消按钮点击')
+            $toast.show({message: '弹窗取消按钮点击事件触发'})
         }
     }
 }
