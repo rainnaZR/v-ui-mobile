@@ -42,9 +42,7 @@ module.exports.plugins.push(
     new OptimizeCssPlugin(),
     new UglifyJsPlugin({
         uglifyOptions: {
-          compress: {
             warnings: false
-          }
         },
         sourceMap: true,
         parallel: true
