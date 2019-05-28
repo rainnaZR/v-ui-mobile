@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import OSS from 'ali-oss';
+// import OSS from 'ali-oss';
 
 /* 配置链接参考：
 https://help.aliyun.com/document_detail/32069.html#h2-url-2
@@ -71,7 +71,8 @@ export default {
     },
 
     mounted(){
-        this.ossClient = new OSS(OSS_CONFIG);
+        // this.ossClient = new OSS(OSS_CONFIG);
+        this.ossClient = {};
     },
 
     methods: {

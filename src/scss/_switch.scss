@@ -16,7 +16,8 @@
         height: 29px;
         box-sizing: border-box;
         border-radius: 15px;
-        border: 1px solid $gray;
+        border-width: 1px;
+        border-style: solid;
         box-shadow: inset 0px 1px 3px rgba(0,0,0,.05);
         transition: all .3s;
         .circle{
