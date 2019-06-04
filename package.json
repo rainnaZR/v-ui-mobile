@@ -1,6 +1,6 @@
 {
   "name": "v-ui-mobile",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A Component Library, based on Vue.js.",
   "main": "dist/vui.min.js",
   "style": "dist/vui.min.css",

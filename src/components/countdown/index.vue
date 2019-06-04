@@ -1,11 +1,18 @@
 <template>
     <div vu-countdown
         class="vu-countdown"
-        ref="countdown"
         :style="{
             fontSize: `${fontSize}px`,
             color
         }">
+        {{desc}}
+        <span v-if="timeBgColor">
+            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftDay}}</span>天
+            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftHour}}</span>时
+            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftMin}}</span>分
+            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftSecond}}</span>秒
+        </span>
+        <span v-else>{{leftDay}}天{{leftHour}}时{{leftMin}}分{{leftSecond}}秒</span>
     </div>
 </template>
 
@@ -23,14 +30,27 @@ export default {
             type: String,
             default: DEFAULT_COLOR_GRAY2
         },
+        timeBgColor: {
+            type: String,
+            default: ''
+        },
+        timeColor: {
+            type: String,
+            default: ''
+        },
         desc: {
             type: String,
             default: '倒计时剩余'
         },
-        leftTime: [Number],
-        format: {
-            type: String,
-            default: 'dd-hh-mm-ss'
+        leftTime: [Number]
+    },
+
+    data(){
+        return {
+            leftDay: 0,
+            leftHour: 0,
+            leftMin: 0,
+            leftSecond: 0
         }
     },
 
@@ -42,17 +62,12 @@ export default {
         initCountdown(){
             if(!this.leftTime) return;
 
-            let elem = this.$refs.countdown;
-
             time.getCountDown(this.leftTime, res => {
                 if(res){
-                    let date = this.format
-                        .replace(/\-/g,'')
-                        .replace('dd', `${res.day}天 `)
-                        .replace('hh', `${res.hour}时 `)
-                        .replace('mm', `${res.min}分 `)
-                        .replace('ss', `${res.second}秒`)
-                    elem.innerHTML = `${this.desc} ${date}`
+                    this.leftDay = res.day
+                    this.leftHour = res.hour
+                    this.leftMin = res.min
+                    this.leftSecond = res.second
                 }else{
                     this.$emit('stop')
                 }

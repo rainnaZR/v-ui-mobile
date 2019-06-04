@@ -13,7 +13,7 @@
             :fontSize="14"
             color="green"
             desc="距离活动结束"
-            format="dd-hh-mm"
+            timeBgColor="red"
             :leftTime="123120000"
             @stop="stop('倒计时3')"/>
     </div>
