@@ -37,7 +37,6 @@ function getCountDown(timestamp, cbFunc){
 
         res = formatLeftTime(timestamp);
         cbFunc(res);
-        console.log('倒计时返回值', res)
         timestamp -= 1000;
     }
     intervalId = setInterval(change, 1000);
