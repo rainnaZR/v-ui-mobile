@@ -7,10 +7,10 @@
         }">
         {{desc}}
         <span v-if="timeBgColor">
-            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftDay}}</span>天
-            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftHour}}</span>时
-            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftMin}}</span>分
-            <span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftSecond}}</span>秒
+            <span v-if="showDay"><span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftDay}}</span>天</span>
+            <span v-if="showHour"><span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftHour}}</span>时</span>
+            <span v-if="showMinute"><span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftMin}}</span>分</span>
+            <span v-if="showSeconds"><span class="time" :style="{backgroundColor: timeBgColor,color: timeColor}">{{leftSecond}}</span>秒</span>
         </span>
         <span v-else>{{leftDay}}天{{leftHour}}时{{leftMin}}分{{leftSecond}}秒</span>
     </div>
@@ -42,7 +42,11 @@ export default {
             type: String,
             default: '倒计时剩余'
         },
-        leftTime: [Number]
+        leftTime: [Number],
+        format: {
+            type: String,
+            default: 'dd-hh-mm-ss'
+        }
     },
 
     data(){
@@ -50,15 +54,28 @@ export default {
             leftDay: 0,
             leftHour: 0,
             leftMin: 0,
-            leftSecond: 0
+            leftSecond: 0,
+            showDay: true,
+            showHour: true,
+            showMinute: true,
+            showSeconds: true
         }
     },
 
     mounted(){
+        this.initFormat()
         this.initCountdown()
     },
 
     methods: {
+        initFormat(){
+            let format = this.format.split('-');
+            this.showDay = format.includes('dd');
+            this.showHour = format.includes('hh');
+            this.showMinute = format.includes('mm');
+            this.showSeconds = format.includes('ss');
+        },
+
         initCountdown(){
             if(!this.leftTime) return;
 
