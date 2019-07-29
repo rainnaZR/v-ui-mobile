@@ -69,11 +69,12 @@ export default {
 
     methods: {
         initFormat(){
-            let format = this.format.split('-');
-            this.showDay = format.includes('dd');
-            this.showHour = format.includes('hh');
-            this.showMinute = format.includes('mm');
-            this.showSeconds = format.includes('ss');
+            let format = this.format;
+            if(!format) return;
+            this.showDay = format.indexOf('dd') > -1;
+            this.showHour = format.indexOf('hh') > -1;
+            this.showMinute = format.indexOf('mm') > -1;
+            this.showSeconds = format.indexOf('ss') > -1;
         },
 
         initCountdown(){
