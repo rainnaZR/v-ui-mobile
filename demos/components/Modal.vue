@@ -40,13 +40,13 @@ export default {
             isShowModal: false,
             showCloseBtn: true,
             isShowModal2: false,
-            showCloseBtn2: true
+            showCloseBtn2: false
         }
     },
 
     methods: {
         close(){
-            alert('蒙层点击');
+            console.log('蒙层点击');
         }
     }
 }
