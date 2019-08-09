@@ -42,8 +42,13 @@
 
 <script>
 import {extend} from 'utils_path/index';
+import {button} from '../button';
 
 export default {
+    components: {
+        'vu-button': button
+    },
+
     props: {
         value: {
             type: Boolean,
