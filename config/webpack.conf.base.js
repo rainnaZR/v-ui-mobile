@@ -54,8 +54,7 @@ module.exports =  {
             'vue$': 'vue/dist/vue.common.js',
             'scss_path': path.join(__dirname, '../src/scss'),
             "components_path": path.join(__dirname, '../src/components'),
-            "utils_path": path.join(__dirname, '../src/utils'),
-            'v-ui-mobile': path.join(__dirname, '../src/index')
+            "utils_path": path.join(__dirname, '../src/utils')
         }
     },
     plugins: [

@@ -18,7 +18,7 @@ import DialogComponent from './components/dialog';
 import toast from './services/toast/index.js';
 import dialog from './services/dialog/index.js';
 
-function install(){
+function install(Vue){
     // Components
     Vue.component('vu-button', Button);
     Vue.component('vu-icon', Icon);
