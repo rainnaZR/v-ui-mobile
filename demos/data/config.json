@@ -105,7 +105,8 @@
       },{
         "name": "Modal",
         "desc": "弹窗",
-        "router": ""
+        "router": "/notice/modal",
+        "done": true
       }]
     },{
       "title": "Date",

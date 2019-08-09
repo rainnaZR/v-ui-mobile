@@ -25,6 +25,7 @@ import ProgressBar from './components/ProgressBar';
 import Countdown from './components/Countdown';
 import Toast from './components/Toast';
 import Dialog from './components/Dialog';
+import Modal from './components/Modal';
 
 const routes = [
     {path: '/', component: Main},
@@ -41,7 +42,8 @@ const routes = [
     {path: '/form/switch', component: Switch},
     {path: '/date/countdown', component: Countdown},
     {path: '/notice/toast', component: Toast},
-    {path: '/notice/dialog', component: Dialog}
+    {path: '/notice/dialog', component: Dialog},
+    {path: '/notice/modal', component: Modal}
 ];
 
 const router = new VueRouter({

@@ -1,0 +1,32 @@
+.vu-modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.7);
+    .content{
+        position: relative;
+        width: 75%;
+        max-height: 70%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 13px;
+        color: #666;
+        line-height: 1.6;
+    }
+    .button{
+        position: fixed;
+        left: 50%;
+        top: 88%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+}

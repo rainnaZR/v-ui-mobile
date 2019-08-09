@@ -44,6 +44,6 @@ function getCountDown(timestamp, cbFunc){
     change()
 }
 
-export default {
+export {
     getCountDown
 }

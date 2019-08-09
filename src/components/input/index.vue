@@ -23,7 +23,7 @@
                 @keydown="keydown" />
 
             <div class="input-clear" v-if="showClearButton" @click="clear">
-                <vu-icon class="vu-icon-close" color="#ccc" />
+                <v-icon class="vu-icon-close" color="#ccc" />
             </div>
         </div>
 
@@ -34,9 +34,14 @@
 </template>
 
 <script>
-import {DEFAULT_COLOR_WHITE} from '../constants'
+import {DEFAULT_COLOR_WHITE} from '../constants';
+import icon from '../icon';
 
 export default {
+    components: {
+        'v-icon': icon
+    },
+
     props:{
         value: [String, Number],
         label: {

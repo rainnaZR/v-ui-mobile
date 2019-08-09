@@ -5,14 +5,14 @@
         :style="{backgroundColor: bgColor}">
 
         <form action="" class="search-input">
-            <vu-input
+            <v-input
                 :inputBgColor="inputBgColor"
                 v-model="keyword"
                 type="search"
                 :placeholder="placeholder"
                 @keydown="keydown">
-                <vu-icon class="vu-icon-search" :color="searchIconColor" slot="prepend" />
-            </vu-input>
+                <v-icon class="vu-icon-search" :color="searchIconColor" slot="prepend" />
+            </v-input>
         </form>
 
         <button
@@ -25,9 +25,16 @@
 </template>
 
 <script>
-import {DEFAULT_COLOR_WHITE, DEFAULT_COLOR_GRAY, DEFAULT_COLOR_GRAY2, DEFAULT_COLOR_GRAY3} from '../constants'
+import {DEFAULT_COLOR_WHITE, DEFAULT_COLOR_GRAY, DEFAULT_COLOR_GRAY2, DEFAULT_COLOR_GRAY3} from '../constants';
+import input from '../input';
+import icon from '../icon';
 
 export default {
+    components: {
+        'v-input': input,
+        'v-icon': icon
+    },
+
     props:{
         bgColor: {
             type: String,

@@ -13,14 +13,14 @@
                 <!-- 选中状态 -->
                 <span v-if="hasChecked(item.value)">
                     <slot name="selected">
-                        <vu-icon class="vu-icon-correct" :size="20" :color="selectDefaultColor" />
+                        <v-icon class="vu-icon-correct" :size="20" :color="selectDefaultColor" />
                     </slot>
                 </span>
 
                 <!-- 未选中状态 -->
                 <span v-else>
                     <slot name="unselected">
-                        <vu-icon class="vu-icon-correct" :size="20" :color="unselectDefaultColor" />
+                        <v-icon class="vu-icon-correct" :size="20" :color="unselectDefaultColor" />
                     </slot>
                 </span>
 
@@ -31,9 +31,13 @@
 </template>
 
 <script>
-import {DEFAULT_COLOR_RED, DEFAULT_COLOR_GRAY} from '../constants'
+import {DEFAULT_COLOR_RED, DEFAULT_COLOR_GRAY} from '../constants';
+import icon from '../icon';
 
 export default {
+    components: {
+        'v-icon': icon
+    },
     props: {
         options: {
             type: Array,

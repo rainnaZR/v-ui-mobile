@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'vuiconfont';  /* project id 1003753 */
-    src: url('//at.alicdn.com/t/font_1003753_c6a00encw8h.eot');
-    src: url('//at.alicdn.com/t/font_1003753_c6a00encw8h.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.woff2') format('woff2'),
-    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.woff') format('woff'),
-    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_1003753_c6a00encw8h.svg#vuiconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_1003753_y3942qfj33m.eot');
+    src: url('//at.alicdn.com/t/font_1003753_y3942qfj33m.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1003753_y3942qfj33m.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1003753_y3942qfj33m.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1003753_y3942qfj33m.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1003753_y3942qfj33m.svg#vuiconfont') format('svg');
   }
 
 //icon组件混入样式
@@ -26,6 +26,9 @@
     }
     &-close{
         @include iconfont-style("\e605");
+    }
+    &-close2{
+        @include iconfont-style("\e607");
     }
     &-up{
         @include iconfont-style("\e978");

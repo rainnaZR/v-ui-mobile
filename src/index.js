@@ -14,6 +14,7 @@ import Upload from './components/upload';
 import ProgressBar from './components/ProgressBar';
 import Countdown from './components/countdown';
 import DialogComponent from './components/dialog';
+import Modal from './components/modal';
 // service
 import toast from './services/toast/index.js';
 import dialog from './services/dialog/index.js';
@@ -32,11 +33,15 @@ function install(Vue){
     Vue.component('vu-progressbar', ProgressBar);
     Vue.component('vu-countdown', Countdown);
     Vue.component('vu-dialog', DialogComponent);
+    Vue.component('vu-modal', Modal);
     //Services
     Vue.prototype.$toast = window.$toast = toast;
     Vue.prototype.$dialog = window.$dialog = dialog;
 }
 
+export default {
+    install
+}
 export {
     Button,
     Icon,
@@ -50,10 +55,7 @@ export {
     ProgressBar,
     Countdown,
     DialogComponent,
+    Modal,
     toast,
     dialog
-}
-
-export default {
-    install
 }

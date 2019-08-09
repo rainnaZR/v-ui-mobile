@@ -16,23 +16,9 @@
                 <slot name="button">
                     <div class="buttons">
                         <!-- 确认 -->
-                        <vu-button
-                            class="btn"
-                            :height="40"
-                            :fontSize="14"
-                            @click="submit">
-                            {{submitBtnText}}
-                        </vu-button>
+                        <div class="btn" @click="submit">{{submitBtnText}}</div>
                         <!-- 取消 -->
-                        <vu-button
-                            v-if="showCancelBtn"
-                            class="btn"
-                            :outline="true"
-                            :height="40"
-                            :fontSize="14"
-                            @click="cancel">
-                            {{cancelBtnText}}
-                        </vu-button>
+                        <div class="btn btn-1" v-if="showCancelBtn" @click="cancel">{{cancelBtnText}}</div>
                     </div>
                 </slot>
             </div>
@@ -42,13 +28,8 @@
 
 <script>
 import {extend} from 'utils_path/index';
-import {button} from '../button';
 
 export default {
-    components: {
-        'vu-button': button
-    },
-
     props: {
         value: {
             type: Boolean,

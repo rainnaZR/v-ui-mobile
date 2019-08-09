@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import time from 'utils_path/time'
+import {getCountDown} from 'utils_path/time'
 import {DEFAULT_COLOR_GRAY2} from '../constants'
 
 export default {
@@ -80,7 +80,7 @@ export default {
         initCountdown(){
             if(!this.leftTime) return;
 
-            time.getCountDown(this.leftTime, res => {
+            getCountDown(this.leftTime, res => {
                 if(res){
                     this.leftDay = res.day
                     this.leftHour = res.hour
