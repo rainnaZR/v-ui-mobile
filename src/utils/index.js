@@ -24,7 +24,7 @@ const extend = (target, source) => {
     return target
 }
 
-module.exports = {
+export {
     createElement,
     removeElement,
     timeout,

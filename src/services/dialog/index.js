@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import {createElement} from 'utils_path/index';
-import Dialog from './index.vue'
+import Dialog from 'components_path/dialog';
 
 class NewDialog{
     constructor(){
