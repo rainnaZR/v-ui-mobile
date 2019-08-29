@@ -41,10 +41,7 @@ module.exports =  {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader',
-                include: [
-                    '/node_modules/v-ui-mobile/dist/'  //增加此项
-                ]
+                loader: 'style-loader!css-loader'
             }
         ]
     },

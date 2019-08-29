@@ -6,6 +6,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import vui from 'v-ui-mobile';
+import 'v-ui-mobile/dist/vui.min.css';
 Vue.use(vui);
 
 import config from './data/config';
