@@ -6,7 +6,7 @@
   "style": "dist/vui.min.css",
   "scripts": {
     "build:vui": "node config/build.vui.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config config/webpack.conf.demo.js --port 1768"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config config/webpack.conf.demo.js"
   },
   "repository": {
     "type": "git",

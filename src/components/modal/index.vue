@@ -1,8 +1,28 @@
 <template>
-    <div vu-modal class="vu-modal" @click="close" v-show="showModal">
-        <!-- 弹窗容器 -->
-        <div class="content" @click="wrapClick">
+    <div vu-modal class="vu-modal" @click="close" v-if="showModal">
+        <!-- 普通弹窗容器 -->
+        <div v-if="type == 'normal'" class="content" @click="wrapClick">
             <slot></slot>
+        </div>
+
+        <!-- 分享弹窗 -->
+        <div v-if="type == 'share'" @click="wrapClick">
+            <slot>
+                <div
+                    v-if="content"
+                    :style="{
+                        position: 'fixed',
+                        top: `${content.top || 10}px`,
+                        right: `${content.right || 10}px`
+                    }">
+                    <img
+                        :style="{
+                            width: `${content.imgWidth}px`,
+                            height: `${content.imgHeight}px`
+                        }"
+                        :src="content.imgUrl" />
+                </div>
+            </slot>
         </div>
 
         <!-- 关闭按钮 -->
@@ -13,8 +33,14 @@
 </template>
 
 <script>
+import {extend} from 'utils_path/index';
+
 export default {
     props: {
+        type: {
+            type: [String],
+            default: 'normal'
+        },
         value: {
             type: Boolean,
             default: false,
@@ -22,6 +48,9 @@ export default {
         showCloseBtn: {
             type: Boolean,
             default: true
+        },
+        content: {
+            type: [Object]
         }
     },
 
@@ -48,6 +77,11 @@ export default {
         close(){
             this.showModal = false;
             this.$emit('close');
+        },
+
+        show(options){
+            this.showModal = true;
+            extend(this, options);
         }
     }
 }

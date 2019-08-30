@@ -30,6 +30,8 @@
             <p>尊敬的用户，为了保障您的合法权益，请您在充值前，仔细、完整地阅读以下充值协议。当您点击“充值”按钮，即视为已阅读、理解本协议，并同意按本协议规定执行。</p>
             <p>1.充值方式</p>
         </vu-modal>
+
+        <vu-button @click="showShareModal">分享蒙层提示</vu-button>
     </div>
 </template>
 
@@ -47,6 +49,19 @@ export default {
     methods: {
         close(){
             console.log('蒙层点击');
+        },
+
+        showShareModal(){
+            $modal.show({
+                type: 'share',
+                content: {
+                    imgUrl: 'https://image.ewwerr.com/web/activitygroupbuy/3o5q8rhsl69o.png',
+                    imgWidth: 214,
+                    top: 10,
+                    right: 10
+                },
+                showCloseBtn: false
+            })
         }
     }
 }
