@@ -6,7 +6,7 @@
   "style": "dist/vui.min.css",
   "scripts": {
     "build:vui": "node config/build.vui.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config config/webpack.conf.demo.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config config/webpack.conf.demo.js --port 1768"
   },
   "repository": {
     "type": "git",
@@ -53,7 +53,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "v-ui-mobile": "^1.1.5"
+    "v-ui-mobile": "^1.1.9"
   },
   "directories": {
     "demos": "demos"
