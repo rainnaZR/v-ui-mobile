@@ -55,7 +55,7 @@ export default {
             $modal.show({
                 type: 'share',
                 content: {
-                    imgUrl: 'https://image.ewwerr.com/web/activitygroupbuy/3o5q8rhsl69o.png',
+                    imgUrl: 'https://image.xxx.com/web/activitygroupbuy/3o5q8rhsl69o.png',
                     imgWidth: 214,
                     top: 10,
                     right: 10

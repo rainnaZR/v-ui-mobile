@@ -13,7 +13,7 @@
                     :style="{
                         position: 'fixed',
                         top: `${content.top || 10}px`,
-                        right: `${content.right || 10}px`
+                        right: `${content.right || 15}px`
                     }">
                     <img
                         :style="{
