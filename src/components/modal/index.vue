@@ -1,6 +1,5 @@
 <template>
-    <div v-if="showModal">
-    <div vu-modal class="vu-modal" @click.stop="close">
+    <div vu-modal class="vu-modal" @click.stop="close" v-if="showModal">
         <!-- 普通弹窗容器 -->
         <div v-if="type == 'normal'" class="content" @click="wrapClick">
             <slot></slot>
@@ -30,7 +29,6 @@
         <div class="button" v-if="showCloseBtn">
             <vu-icon class="vu-icon-close2" :size="34" color="rgba(255,255,255,.8)" />
         </div>
-    </div>
     </div>
 </template>
 
