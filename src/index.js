@@ -11,6 +11,7 @@ import Search from './components/search';
 import Checker from './components/checker';
 import Range from './components/range';
 import Upload from './components/upload';
+import Switch from './components/switch';
 import ProgressBar from './components/ProgressBar';
 import Countdown from './components/countdown';
 import DialogComponent from './components/dialog';
@@ -29,6 +30,7 @@ function install(Vue){
     Vue.component('vu-checkbox', Checkbox);
     Vue.component('vu-search', Search);
     Vue.component('vu-checker', Checker);
+    Vue.component('vu-switch', Switch);
     Vue.component('vu-range', Range);
     Vue.component('vu-upload', Upload);
     Vue.component('vu-progressbar', ProgressBar);
