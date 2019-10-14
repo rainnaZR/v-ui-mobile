@@ -30,7 +30,9 @@ export default {
 
     data(){
         return {
-            selected: this.value
+            selected: this.value,
+            defaultBgColor: '#f1f1f1',
+            defaultBorderColor: '#f1f1f1'
         }
     },
 
@@ -46,8 +48,8 @@ export default {
     methods: {
         getStyle(){
             return {
-                backgroundColor: this.selected ? this.theme : '',
-                borderColor: this.selected ? this.theme : ''
+                backgroundColor: this.selected ? this.theme : this.defaultBgColor,
+                borderColor: this.selected ? this.theme : this.defaultBorderColor
             }
         }
     }
