@@ -6,8 +6,11 @@
 
         <label>
             <input type="checkbox" v-model="selected" :checked="selected"/>
-            <div class="switch-button" :class="{'switch-button-slide' : selected}" :style="getStyle()">
-                <i class="circle"></i>
+            <div class="switch-button" :style="{
+                backgroundColor: selected ? theme : defaultBgColor,
+                borderColor: selected ? theme : defaultBorderColor
+            }">
+                <i class="circle" :style="{left: `${selected ? 25 : 0}px`}"></i>
             </div>
         </label>
     </div>
@@ -42,15 +45,6 @@ export default {
         },
         selected(newValue){
             this.$emit('input', newValue);
-        }
-    },
-
-    methods: {
-        getStyle(){
-            return {
-                backgroundColor: this.selected ? this.theme : this.defaultBgColor,
-                borderColor: this.selected ? this.theme : this.defaultBorderColor
-            }
         }
     }
 }
